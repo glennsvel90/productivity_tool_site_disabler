@@ -37,4 +37,4 @@ while True:
                     # truncate method will delete all things under the specified section bottom the pointer
             file.truncate()
             print('Non-working time: On; you may use the sites)
-    time.sleep(120000)
+    time.sleep(600)
