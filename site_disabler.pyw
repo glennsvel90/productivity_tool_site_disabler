@@ -10,8 +10,8 @@ redirect = '127.0.0.1'
 print(dt.now())
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day, 6) < dt.now() < dt(.now().year, dt.now().month, dt.now().day, 16):
-        print('Working Hours Are On: ')
+    if dt(dt.now().year, dt.now().month, dt.now().day, 6) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 16):
+        print('Working Hours Are On: You may not use the sites until working hours are done')
         with open(hosts_path,'r+') as file:
             content = file.read()
             for site in sites_that_consume_time:
@@ -36,5 +36,5 @@ while True:
                     file.write(line)
                     # truncate method will delete all things under the specified section bottom the pointer
             file.truncate()
-            print('Non-working time: On; you may use the sites)
+            print('Non-working time: On; you may use the sites')
     time.sleep(600)
