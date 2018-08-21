@@ -10,8 +10,8 @@ Clone the repository. Unzip the contents. Open the terminal and change directory
 
 ### Prerequisites
 
-Python 3
-Microsoft Windows
+- Python 3
+- Microsoft Windows
 
 ### Running the program
 
